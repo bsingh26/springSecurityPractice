@@ -1,0 +1,62 @@
+/* Font style for Body Section*/
+body {
+  font-family: Carter One;
+  font-style : italic
+}
+
+/* disable href linking*/
+.tablink.disableDecoration {
+  text-decoration: none;
+}
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+/* Changing border to 0px to hide it */
+table, th, td {
+  border: 0px solid black;
+}
+
+/*Button properties*/
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+
+/*Changes backgorund color and font style on hover*/
+.tablink:hover {
+  background-color: #777;
+  font-style: normal;
+}
+
+/*By default any div content is hidden */
+.tabcontent {
+  display: none;
+  padding: 50px;
+  text-align: justify;
+}
+
+/* Footer propeties, currently not in use 
+.footer {
+  padding: 20px;
+  text-align: right;
+  background: #ddd;
+}
+*/

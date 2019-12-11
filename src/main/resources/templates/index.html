@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Page Title -->
+    <title>Meet Bijendra</title>
+
+    <!--CSS and Java scrip references and locations -->
+
+    <link rel="stylesheet" href="/styles.css"> 
+    <script src="/script.js"></script> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+
+
+</head>
+
+
+<body>
+
+<form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+    <header class="header">
+        <h2>Bijendra B. Singh</h2>
+        <h5>Welcome to my world</h5>
+    </header>
+
+    <!-- Used this to create buttons with different colors. https://www.w3schools.com/howto/howto_js_tab_header.asp-->
+
+    <button class="tablink" onclick="openMenu('me', this, 'red')" id="defaultMenu">About Me</button>
+    <button class="tablink" onclick="openMenu('resume', this, 'green')">Resume</button>
+    <button class="tablink" onclick="openMenu('interests', this, 'blue')">Interests</button>
+    <button class="tablink" onclick="openMenu('contact', this, 'orange')">Contact Me</button>
+
+
+    <!--I pulled this picture from my linkedIN page. Also applied circle class to make image similar to linkedin -->
+    <div id="me" class="tabcontent">
+        <table>
+            <tr>
+                <td>
+                    <img height="400" width="400"
+                        src="https://media.licdn.com/dms/image/C5603AQF-dzgQtdkU7w/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=YVUhvDpJxXm-LpsNFB35VMA0GnIBcWZTjx8hB9XbYFg"
+                        alt="Smiley face" class="img-circle">
+                </td>
+                <td>
+                    <h2> Bijendra B. Singh
+                    </h2>
+                    <p> Business Devlopment Manager, IT America</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="tablink" onclick="openMenu('contact', this, 'orange')">Contact Me</button>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Added a linked in badge . This shows how to https://www.linkedin.com/pulse/how-create-linkedin-badge-your-website-brynne-tillman/-->
+    <div id="resume" class="tabcontent">
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US"
+                            data-type="vertical" data-theme="dark" data-vanity="bijendra-singh-78b16131"><a
+                                class="LI-simple-link"
+                                href='https://www.linkedin.com/in/bijendra-singh-78b16131?trk=profile-badge'>Bijendra
+                                Singh</a></div>
+                    </p>
+
+                    <p> <a href="https://www.linkedin.com/in/bijendra-singh-78b16131/">   Please click on a badge to go to my LinkedIn page</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- This div has link to youtube video-->
+
+    <div id="interests" class="tabcontent">
+        <p>Soccer</p>
+        <p>Movies</p>
+        <p>Travel</p>
+        <p>Enjoy the following music</p>
+        <p>
+            <p>
+                <iframe width="420" height="345" src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                </iframe>
+            </p>
+        </p>
+    </div>
+
+    <!-- Contact info-->
+    <div id="contact" class="tabcontent">
+        <p>Reach me via phone: (224)456-7890</p>
+        <p>
+            <a class="tablink disableDecoration" href="mailto:bsingh26@uic.edu?Subject=Hi%20User" target="_top">Send Me
+                an e-Mail</a>
+        </p>
+        <p>Find Me here:</p>
+        <!--
+            Embed google map from here. https://www.embedgooglemap.net/
+        -->
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=University%20of%20IL%20at%20chicago&t=&z=7&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                    href="https://www.embedgooglemap.net/blog/best-vpn/">these are the best vpns of 2019</a></div>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 400px;
+                    width: 400px;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 400px;
+                    width: 400px;
+                }
+            </style>
+        </div>
+    </div>
+
+
+    <script>
+        // set default menu item 
+        document.getElementById("defaultMenu").click();
+    </script>
+
+
+    <div class="header">
+        <p>Copyright 2019. All rights reserved</p>
+    </div>
+
+</body>
+
+</html>
